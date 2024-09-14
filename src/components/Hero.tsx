@@ -9,11 +9,17 @@ const Hero = () => {
       <Spotlight fill="purple" />
 
       <main className="flex justify-center gap-14 items-center p-8">
-        <div className="">
+        <div className="flex flex-col gap-2 items-center md:w-[60vw]">
+          <p className="uppercase tracking-widest text-center text-blue-400 ">
+            Dynamic Web Magic with Next.js
+          </p>
           <TextGenerateEffect
             words={words}
             className="text-center text-[50px] md:text-4xl lg:text-5xl"
           />
+          <p className=" text-center text-xl font-semibold font-serif max-w-[60%]">
+            Hi! I&apos;m Aung Myo Aye, a FullStack Developer based in Myanmar.
+          </p>
         </div>
         <div className=" bg-gray-700">
           <div className="size-80"></div>
