@@ -3,21 +3,20 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const Hero = () => {
-  const words =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fugiat quia laudantium, non est voluptas maxime, ducimus similique deserunt vitae recusandae exercitationem, sunt minus expedita! Aut laudantium adipisci vero beatae!";
+  const words = "Transforming Concepts into Seamless User Experiences";
   return (
-    <section className="min-h-screen relative bg-pink-700 flex items-center ">
+    <section className="min-h-screen relative bg-green-100 flex items-center ">
       <Spotlight fill="purple" />
 
-      <main className="flex justify-center gap-10 items-center p-6">
-        <div className="w-[40%]">
+      <main className="flex justify-center gap-14 items-center p-8">
+        <div className="">
           <TextGenerateEffect
             words={words}
-            className="text-center dark:text-red-100 text-black-300 text-4xl"
+            className="text-center text-[50px] md:text-4xl lg:text-5xl"
           />
         </div>
-        <div className="w-[40%] bg-gray-700">
-          <div className="size-20"></div>
+        <div className=" bg-gray-700">
+          <div className="size-80"></div>
         </div>
       </main>
     </section>
