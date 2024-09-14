@@ -5,8 +5,12 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 const Hero = () => {
   const words = "Transforming Concepts into Seamless User Experiences";
   return (
-    <section className="min-h-screen relative bg-green-100 flex items-center ">
+    <section className="min-h-screen relative flex items-center ">
       <Spotlight fill="purple" />
+      <div className="h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.4] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+        {/* Radial gradient for the container to give a faded look */}
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      </div>
 
       <main className="flex justify-center gap-14 items-center p-8">
         <div className="flex flex-col gap-2 items-center md:w-[60vw]">
