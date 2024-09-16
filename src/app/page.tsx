@@ -1,3 +1,4 @@
+import GridContainer from "@/components/GridContainer";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 
@@ -14,6 +15,7 @@ export default function Home() {
     <section className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <FloatingNav navItems={navItems} />
       <Hero />
+      <GridContainer />
     </section>
   );
 }
