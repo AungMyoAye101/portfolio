@@ -1,6 +1,6 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { TextGenerateEffect } from "./ui/TextGenerate";
 import Image from "next/image";
 
 const Hero = () => {

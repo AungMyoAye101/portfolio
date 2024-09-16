@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import { FloatingNav } from "@/components/ui/floating-navbar";
+import { FloatingNav } from "@/components/ui/FloatingNav";
 
 import Image from "next/image";
 export const navItems = [
