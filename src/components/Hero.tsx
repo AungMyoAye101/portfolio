@@ -14,16 +14,19 @@ const Hero = () => {
 
       <main className="flex justify-center gap-14 items-center p-8">
         <div className="flex flex-col gap-1 items-center md:w-[60vw]">
-          <p className="uppercase tracking-widest text-center text-sky-200 ">
-            Dynamic Web Magic with Next.js
-          </p>
+          <TextGenerateEffect
+            words="Dynamic Web Magic with Next.js"
+            className="uppercase tracking-widest text-center text-sky-200 "
+          />
+
           <TextGenerateEffect
             words={words}
             className="text-center text-[50px] md:text-4xl lg:text-5xl"
           />
-          <p className=" text-center text-sky-200 text-xl font-semibold font-serif max-w-[60%]">
-            Hi! I&apos;m Aung Myo Aye, a FullStack Developer based in Myanmar.
-          </p>
+          <TextGenerateEffect
+            words="Hi! I'm Aung Myo Aye, a FullStack Developer based in Myanmar."
+            className=" text-center text-sky-200 text-xl font-semibold font-serif max-w-[60%]"
+          />
         </div>
         <div className=" bg-gray-700">
           <div className="size-80"></div>
