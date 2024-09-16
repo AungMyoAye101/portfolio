@@ -17,30 +17,31 @@ const Hero = () => {
       </div>
 
       {/* Landing page  */}
-      <main className="flex flex-col md:flex-row justify-center gap-14 items-center p-8">
-        <div className="flex flex-col gap-1 items-center w-full  md:w-[60vw]">
+      <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center p-4 md:p-8">
+        <div className="flex flex-col gap-2 items-center w-full  md:w-[60vw] ">
           <TextGenerateEffect
             words="Dynamic Web Magic with Next.js"
-            className="uppercase tracking-widest text-center "
+            className="uppercase tracking-widest text-center text-xs md:text-lg "
             duration={1}
           />
 
           <TextGenerateEffect
             words={words}
-            className="text-center text-[50px] md:text-4xl lg:text-5xl"
+            className="text-center text-[30px] md:text-4xl lg:text-5xl"
             duration={1.2}
           />
           <TextGenerateEffect
             words="Hi! I'm Aung Myo Aye, a FullStack Developer based in Myanmar."
-            className=" text-center text-xl font-semibold font-serif max-w-[60%]"
+            className=" text-center text-sm md:text-xl font-semibold font-serif max-w-[60%]"
             duration={1.5}
           />
         </div>
-        <div className="relative size-90 w-full md:w-[40vw] bg-gray-400">
+        <div className="relative  w-full md:w-[30vw] ">
           <Image
-            src={""}
-            fill
-            className="object-cover rounded-full "
+            src={"/zoro.jpeg"}
+            width={240}
+            height={240}
+            className="object-cover rounded-full mx-auto "
             alt="Aung Myo Aye's profile picture"
           />
         </div>
