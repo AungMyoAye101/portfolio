@@ -11,9 +11,8 @@ export const navItems = [
 
 export default function Home() {
   return (
-    <section>
+    <section className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <FloatingNav navItems={navItems} />
-      <Hero />
       <Hero />
     </section>
   );
