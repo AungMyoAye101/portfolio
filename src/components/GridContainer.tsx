@@ -14,8 +14,8 @@ const GridContainer = () => {
             title={item.title}
             description={item.description}
             className={item.className}
-            // image={item.img}
-            // imgClassName={item.imgClassName}
+            image={item.img}
+            imgClassName={item.imgClassName}
             titleClassName={item.titleClassName}
           />
         ))}
