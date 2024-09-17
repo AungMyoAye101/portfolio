@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BackgroundGradientAnimation } from "./BgGradient";
 import { Globe } from "./Globe";
 import GridGlobe from "./GridGlobe";
+import { span } from "framer-motion/client";
 
 export const BentoGrid = ({
   className,
@@ -45,10 +46,13 @@ export const BentoGridItem = ({
   spareImage?: string;
   titleClassName?: string;
 }) => {
+  const leftLists = ["React js", "Next Js", "Vue Js", "Jquery"];
+  const rightLists = ["JavaScript", "Node Js", "Express Js", "Python"];
+
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4 relative overflow-hidden",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none border border-white-[0.1] justify-between flex flex-col space-y-4 relative overflow-hidden",
         className
       )}
       style={{
@@ -88,11 +92,42 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+
+          {/* Add globle */}
+
+          {id === 2 && <GridGlobe />}
+
+          {/* My Tech Stack */}
+
+          {id === 3 && (
+            <div className="flex gap-2 lg:gap-4 w-fit absolute -right-2 lg:-right-3">
+              <div className="flex flex-col gap-3 ">
+                {rightLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
+                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+              </div>
+              <div className="flex flex-col gap-3 ">
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
+                {leftLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
+                  lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
-
-        {/* Add globle */}
-
-        {id === 2 && <GridGlobe />}
       </div>
     </div>
   );
