@@ -5,12 +5,11 @@ import Image from "next/image";
 import { BackgroundGradientAnimation } from "./BgGradient";
 import { Globe } from "./Globe";
 import GridGlobe from "./GridGlobe";
-import { span } from "framer-motion/client";
-import Lottie from "lottie-react";
 import { useState } from "react";
 import animationData from "@/data/confettie.json";
 import Button from "./Button";
 import { FaCopy } from "react-icons/fa";
+import Lottie from "lottie-react";
 
 export const BentoGrid = ({
   className,
@@ -66,6 +65,9 @@ export const BentoGridItem = ({
   const handelClick = () => {
     navigator.clipboard.writeText("aungmyoaye101@gmail.com");
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
   };
   const leftLists = ["React js", "Next Js", "Vue Js", "Jquery"];
   const rightLists = ["JavaScript", "Node Js", "Express Js", "Python"];
@@ -95,7 +97,7 @@ export const BentoGridItem = ({
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+            <div className="absolute z-50 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
         )}
 
@@ -153,9 +155,19 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="relative">
               <div className={`absolute right-0 -bottom-5 `}>
-                <Lottie options={defaultOptions} height={200} width={400} />
+                <Lottie
+                  animationData={animationData}
+                  loop={copied}
+                  height={200}
+                  width={400}
+                />
               </div>
-              <Button title="Copy my email" postion="left" icon={<FaCopy />} />
+              <Button
+                title={copied ? "Email is Copied!" : "Copy my email address"}
+                postion="left"
+                icon={<FaCopy />}
+                handelClick={handelClick}
+              />
             </div>
           )}
         </div>
