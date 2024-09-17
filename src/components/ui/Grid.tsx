@@ -1,9 +1,16 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "./BgGradient";
 import { Globe } from "./Globe";
 import GridGlobe from "./GridGlobe";
 import { span } from "framer-motion/client";
+import Lottie from "lottie-react";
+import { useState } from "react";
+import animationData from "@/data/confettie.json";
+import Button from "./Button";
+import { FaCopy } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -46,6 +53,20 @@ export const BentoGridItem = ({
   spareImage?: string;
   titleClassName?: string;
 }) => {
+  const [copied, setCopied] = useState(false);
+
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const handelClick = () => {
+    navigator.clipboard.writeText("aungmyoaye101@gmail.com");
+    setCopied(true);
+  };
   const leftLists = ["React js", "Next Js", "Vue Js", "Jquery"];
   const rightLists = ["JavaScript", "Node Js", "Express Js", "Python"];
 
@@ -106,7 +127,7 @@ export const BentoGridItem = ({
                   <span
                     key={i}
                     className="lg:py-2 lg:px-3 py-1 px-2 text-xs lg:text-base opacity-50 
-                        lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                        lg:opacity-100 rounded-lg text-center bg-[#10132E] "
                   >
                     {item}
                   </span>
@@ -125,6 +146,16 @@ export const BentoGridItem = ({
                   </span>
                 ))}
               </div>
+            </div>
+          )}
+
+          {/* My email contact */}
+          {id === 6 && (
+            <div className="relative">
+              <div className={`absolute right-0 -bottom-5 `}>
+                <Lottie options={defaultOptions} height={200} width={400} />
+              </div>
+              <Button title="Copy my email" postion="left" icon={<FaCopy />} />
             </div>
           )}
         </div>
