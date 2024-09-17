@@ -2,6 +2,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import Image from "next/image";
+import Button from "./ui/Button";
 
 const Hero = () => {
   const words = "Transforming Concepts into Seamless User Experiences";
@@ -35,6 +36,7 @@ const Hero = () => {
             className=" text-center text-sm md:text-xl font-semibold font-serif max-w-[60%]"
             duration={1.5}
           />
+          <Button title="Show my work" />
         </div>
         <div className="relative  w-full md:w-[30vw] ">
           <Image
