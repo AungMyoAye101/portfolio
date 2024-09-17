@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import Image from "next/image";
 import Button from "./ui/Button";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   const words = "Transforming Concepts into Seamless User Experiences";
@@ -28,7 +29,7 @@ const Hero = () => {
 
           <TextGenerateEffect
             words={words}
-            className="text-center text-[30px] md:text-4xl lg:text-5xl"
+            className="text-center text-[24px] md:text-4xl lg:text-5xl"
             duration={1.2}
           />
           <TextGenerateEffect
@@ -36,7 +37,11 @@ const Hero = () => {
             className=" text-center text-sm md:text-xl font-semibold font-serif max-w-[60%]"
             duration={1.5}
           />
-          <Button title="Show my work" />
+          <Button
+            title="Show my work"
+            postion="right"
+            icon={<FaLocationArrow />}
+          />
         </div>
         <div className="relative  w-full md:w-[30vw] ">
           <Image
