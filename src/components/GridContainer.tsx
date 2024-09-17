@@ -12,6 +12,7 @@ const GridContainer = () => {
             key={item.id}
             title={item.title}
             description={item.description}
+            className={item.className}
           />
         ))}
       </BentoGrid>
