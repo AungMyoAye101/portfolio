@@ -1,5 +1,6 @@
 import GridContainer from "@/components/GridContainer";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 
 import Image from "next/image";
@@ -16,6 +17,7 @@ export default function Home() {
       <FloatingNav navItems={navItems} />
       <Hero />
       <GridContainer />
+      <RecentProjects />
     </section>
   );
 }
