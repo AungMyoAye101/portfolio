@@ -67,7 +67,7 @@ export const gridItems = [
 
 const GridContainer = () => {
   return (
-    <div>
+    <section id="project">
       <BentoGrid className="w-full py-20">
         {gridItems.map((item) => (
           <BentoGridItem
@@ -77,7 +77,7 @@ const GridContainer = () => {
           />
         ))}
       </BentoGrid>
-    </div>
+    </section>
   );
 };
 
