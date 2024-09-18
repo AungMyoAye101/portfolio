@@ -1,3 +1,4 @@
+import Exprience from "@/components/Exprience";
 import GridContainer from "@/components/GridContainer";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <GridContainer />
       <RecentProjects />
+      <Exprience />
     </section>
   );
 }
