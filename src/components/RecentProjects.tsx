@@ -5,6 +5,8 @@ import React from "react";
 import { PinContainer } from "./ui/3dPin";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
+import { PinCard } from "./3dCardContainer";
+
 const RecentProjects = () => {
   return (
     <section

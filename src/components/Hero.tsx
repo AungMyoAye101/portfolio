@@ -24,18 +24,15 @@ const Hero = () => {
           <TextGenerateEffect
             words="Dynamic Web Magic with Next.js"
             className="uppercase tracking-widest text-center text-xs md:text-lg "
-            duration={1}
           />
 
           <TextGenerateEffect
             words={words}
             className="text-center text-[24px] md:text-4xl lg:text-5xl"
-            duration={1.2}
           />
           <TextGenerateEffect
             words="Hi! I'm Aung Myo Aye, a FullStack Developer based in Myanmar."
             className=" text-center text-sm md:text-xl font-semibold font-serif max-w-[60%]"
-            duration={1.5}
           />
           <Button
             title="Show my work"
