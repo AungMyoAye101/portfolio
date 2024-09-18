@@ -1,5 +1,4 @@
 import React from "react";
-import { MovingBorderCard } from "./MovingBorderCard";
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovindBorder";
 import Image from "next/image";

@@ -1,10 +1,10 @@
+import Approach from "@/components/Approach";
 import Exprience from "@/components/Exprience";
 import GridContainer from "@/components/GridContainer";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 
-import Image from "next/image";
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -20,6 +20,7 @@ export default function Home() {
       <GridContainer />
       <RecentProjects />
       <Exprience />
+      <Approach />
     </section>
   );
 }
