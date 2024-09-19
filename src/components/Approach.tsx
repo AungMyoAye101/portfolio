@@ -33,11 +33,12 @@ function Approach() {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-black"
+            containerClassName="bg-blue-800"
             colors={[
-              [236, 72, 153],
-              [232, 121, 249],
+              [59, 130, 246],
+              [139, 92, 246],
             ]}
+            // opacities={[0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1]}
             dotSize={2}
           />
           {/* Radial gradient for the cute fade */}
@@ -77,7 +78,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[30rem] "
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[20rem] md:h-[30rem] "
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:
@@ -94,7 +95,7 @@ const Card = ({
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="h-full w-full absolute inset-0"
+            className="h-full w-full absolute inset-0 rounded-xl"
           >
             {children}
           </motion.div>
@@ -116,7 +117,7 @@ const Card = ({
 
 const AceternityIcon = ({ title }: { title: string }) => {
   return (
-    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+    <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors ">
       {title}
     </button>
   );
