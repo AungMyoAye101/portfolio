@@ -215,6 +215,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://github.com/AungMyoAye101",
+    link: "https://www.linkedin.com/in/aung-myo-aye-119017311/",
   },
 ];
