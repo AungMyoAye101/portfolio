@@ -1,6 +1,6 @@
 import React from "react";
 import { workExperience } from "@/data";
-import { Button } from "./ui/MovindBorder";
+import { MovingBorderButton } from "./ui/MovindBorder";
 import Image from "next/image";
 
 const Exprience = () => {
@@ -15,7 +15,7 @@ const Exprience = () => {
 
       <main className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((item) => (
-          <Button
+          <MovingBorderButton
             key={item.id}
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"
@@ -43,7 +43,7 @@ const Exprience = () => {
                 </p>
               </div>
             </div>
-          </Button>
+          </MovingBorderButton>
         ))}
       </main>
     </section>

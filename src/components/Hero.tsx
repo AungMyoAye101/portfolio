@@ -4,7 +4,7 @@ import { TextGenerateEffect } from "./ui/TextGenerate";
 import Image from "next/image";
 import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa";
-
+import { MovingBorderButton } from "./ui/MovindBorder";
 const Hero = () => {
   const words = "Transforming Concepts into Seamless User Experiences";
   return (
@@ -37,14 +37,15 @@ const Hero = () => {
             icon={<FaLocationArrow />}
           />
         </div>
-        <div className="relative  w-full md:w-[30vw] ">
-          <Image
-            src={"/zoro.jpeg"}
-            width={240}
-            height={240}
-            className="object-cover rounded-full mx-auto "
-            alt="Aung Myo Aye's profile picture"
-          />
+        <div className="relative  w-full md:w-[30vw] flex justify-center ">
+          <MovingBorderButton className="size-60 relative ">
+            <Image
+              src={"/zoro.jpeg"}
+              fill
+              className="object-cover saturate-200 "
+              alt="Aung Myo Aye's profile picture"
+            />
+          </MovingBorderButton>
         </div>
       </main>
     </section>
