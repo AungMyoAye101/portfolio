@@ -20,22 +20,19 @@ const Hero = () => {
 
       {/* Landing page  */}
       <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center p-4 md:p-8">
-        <div className="flex flex-col gap-2 items-center w-full  md:w-[60vw] ">
+        <div className="flex flex-col gap-4 items-center w-full  md:w-[50vw] ">
           <TextGenerateEffect
             words="Dynamic Web Magic with Next.js"
-            className="uppercase tracking-widest text-center text-xs md:text-lg "
+            className="uppercase tracking-widest text-center text-xs md:text-base "
           />
 
           <TextGenerateEffect
-            words={words}
-            className="text-center text-[24px] md:text-4xl lg:text-5xl"
+            words="Hi! I'm Aung Myo Aye , a FullStack Developer based in Myanmar ."
+            className="text-center text-[24px] md:text-3xl lg:text-4xl"
           />
-          <TextGenerateEffect
-            words="Hi! I'm Aung Myo Aye, a FullStack Developer based in Myanmar."
-            className=" text-center text-sm md:text-xl font-semibold font-serif max-w-[60%]"
-          />
+
           <Button
-            title="Show my work"
+            title="Download my resume"
             postion="right"
             icon={<FaLocationArrow />}
           />
