@@ -1,5 +1,6 @@
 import Approach from "@/components/Approach";
 import Exprience from "@/components/Exprience";
+import Footer from "@/components/Footer";
 import GridContainer from "@/components/GridContainer";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -21,6 +22,7 @@ export default function Home() {
       <RecentProjects />
       <Exprience />
       <Approach />
+      <Footer />
     </section>
   );
 }
