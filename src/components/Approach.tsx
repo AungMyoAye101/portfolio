@@ -85,10 +85,10 @@ const Card = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <Icon className="absolute size-10 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute size-10 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute size-10 -top-3 -right-3 dark:text-white text-black" />
-      <Icon className="absolute size-10 -bottom-3 -right-3 dark:text-white text-black" />
+      <Icon className="absolute size-10 -top-3 -left-3 dark:text-white text-black z-30" />
+      <Icon className="absolute size-10 -bottom-3 -left-3 dark:text-white text-black z-30" />
+      <Icon className="absolute size-10 -top-3 -right-3 dark:text-white text-blac z-30" />
+      <Icon className="absolute size-10 -bottom-3 -right-3 dark:text-white text-black z-30" />
 
       <AnimatePresence>
         {hovered && (
