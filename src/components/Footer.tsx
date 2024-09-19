@@ -34,12 +34,14 @@ const Footer = () => {
         </h4>
         <div className="flex gap-2 md:gap-4">
           {socialMedia.map((icon) => (
-            <div
+            <a
+              href={icon.link}
+              target="_blank"
               className="size-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 border border-black-300 hover:bg-purple cursor-pointer rounded-full"
               key={icon.id}
             >
               <Image src={icon.img} width={20} height={20} alt={icon.img} />
-            </div>
+            </a>
           ))}
         </div>
       </div>

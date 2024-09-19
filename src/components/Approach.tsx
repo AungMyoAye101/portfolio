@@ -33,7 +33,7 @@ function Approach() {
         >
           <CanvasRevealEffect
             animationSpeed={3}
-            containerClassName="bg-blue-800"
+            containerClassName="bg-dark"
             colors={[
               [59, 130, 246],
               [139, 92, 246],
@@ -78,7 +78,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[20rem] md:h-[30rem] "
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative h-[20rem] md:h-[35rem] "
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:
