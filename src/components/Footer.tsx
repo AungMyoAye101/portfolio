@@ -7,8 +7,11 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col items-center justify-center py-10 gap-10 ">
-      <div className="flex flex-col gap-2 items-center justify-center ">
+    <footer
+      className="w-full flex flex-col items-center justify-center py-10 gap-10 "
+      id="contact"
+    >
+      <div className="flex flex-col gap-4 items-center justify-center ">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
@@ -27,12 +30,12 @@ const Footer = () => {
       </a>
       <div className="flex justify-between items-center gap-4 w-full">
         <h4 className="text-xs md:text-sm font-serif">
-          Copyright © 2024 Aung Myo Aye
+          Copyright © 2024 <span className="text-purple">Aung Myo Aye</span>
         </h4>
         <div className="flex gap-2 md:gap-4">
           {socialMedia.map((icon) => (
             <div
-              className="size-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 border border-black-300 hover:bg-purple-400 cursor-pointer rounded-full"
+              className="size-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-100 border border-black-300 hover:bg-purple cursor-pointer rounded-full"
               key={icon.id}
             >
               <Image src={icon.img} width={20} height={20} alt={icon.img} />

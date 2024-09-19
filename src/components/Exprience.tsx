@@ -13,7 +13,7 @@ const Exprience = () => {
         My <span className="text-purple">Work Exprience</span>
       </h1>
 
-      <main className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <main className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((item) => (
           <Button
             key={item.id}
