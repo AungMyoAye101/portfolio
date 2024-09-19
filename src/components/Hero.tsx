@@ -42,7 +42,7 @@ const Hero = () => {
             <Image
               src={"/zoro.jpeg"}
               fill
-              className="object-cover saturate-200 "
+              className="object-cover saturate-100 "
               alt="Aung Myo Aye's profile picture"
             />
           </MovingBorderButton>

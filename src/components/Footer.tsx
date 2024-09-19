@@ -12,7 +12,7 @@ const Footer = () => {
       id="contact"
     >
       <div className="flex flex-col gap-4 items-center justify-center ">
-        <h1 className="heading lg:max-w-[45vw]">
+        <h1 className="heading lg:max-w-[60vw]">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
