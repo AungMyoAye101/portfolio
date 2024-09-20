@@ -22,13 +22,17 @@ const Hero = () => {
       <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center p-4 md:p-8">
         <div className="flex flex-col gap-4 items-center w-full  md:w-[50vw] ">
           <TextGenerateEffect
-            words="Dynamic Web Magic with Next.js"
+            words="Hi! I'm Aung Myo Aye "
             className="uppercase tracking-widest text-center text-xs md:text-base "
           />
 
           <TextGenerateEffect
-            words="Hi! I'm Aung Myo Aye , a FullStack Developer based in Myanmar ."
+            words="Transforming Concepts into Seamless User Experiences"
             className="text-center text-[24px] md:text-3xl lg:text-4xl"
+          />
+          <TextGenerateEffect
+            words="A Full-stack developer based on Myanmar"
+            className="capatilize tracking-widest text-center text-xs md:text-base "
           />
 
           <Button
