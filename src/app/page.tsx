@@ -1,4 +1,5 @@
 import Approach from "@/components/Approach";
+import Education from "@/components/Education";
 import Exprience from "@/components/Exprience";
 import Footer from "@/components/Footer";
 import GridContainer from "@/components/GridContainer";
@@ -20,6 +21,7 @@ export default function Home() {
       <Hero />
       <GridContainer />
       <RecentProjects />
+      <Education />
       <Exprience />
       <Approach />
       <Footer />
