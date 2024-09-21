@@ -42,11 +42,11 @@ const Hero = () => {
           />
         </div>
         <div className="relative  w-full md:w-[30vw] flex justify-center ">
-          <MovingBorderButton className="size-60 relative ">
+          <MovingBorderButton className="size-60 relative bg-black">
             <Image
-              src={"/zoro.jpeg"}
+              src={"/man.png"}
               fill
-              className="object-cover saturate-100 "
+              className="object-cover bg-black"
               alt="Aung Myo Aye's profile picture"
             />
           </MovingBorderButton>
