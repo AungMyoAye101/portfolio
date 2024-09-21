@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="flex flex-col gap-4 items-center w-full  md:w-[50vw] ">
           <TextGenerateEffect
             words="Hi! I'm Aung Myo Aye "
-            className="uppercase tracking-widest text-center text-xs md:text-base "
+            className=" tracking-widest text-center text-xs md:text-base "
           />
 
           <TextGenerateEffect
