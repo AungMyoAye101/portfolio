@@ -20,15 +20,15 @@ const Hero = () => {
 
       {/* Landing page  */}
       <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center p-4 md:p-8">
-        <div className="flex flex-col gap-4 items-center w-full  md:w-[50vw] ">
+        <div className="flex flex-col gap-3 items-center w-full  md:w-[45vw] ">
           <TextGenerateEffect
-            words="Hi! I'm Aung Myo Aye "
-            className=" tracking-widest text-center text-xs md:text-base "
+            words="Hi ! I'm Aung Myo Aye "
+            className=" tracking-widest text-center text-md md:text-xl "
           />
 
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[24px] md:text-3xl lg:text-4xl"
+            className="text-center text-2xl md:text-3xl lg:text-4xl"
           />
           <TextGenerateEffect
             words="A Full-stack developer based on Myanmar"
