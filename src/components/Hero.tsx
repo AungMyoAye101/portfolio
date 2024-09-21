@@ -22,7 +22,7 @@ const Hero = () => {
       <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center p-4 md:p-8">
         <div className="flex flex-col gap-3 items-center w-full  md:w-[45vw] ">
           <TextGenerateEffect
-            words="Hi ! I'm Aung Myo Aye "
+            words="Hi! I'm Aung Myo Aye "
             className=" tracking-widest text-center text-md md:text-xl "
           />
 
