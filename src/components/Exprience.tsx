@@ -11,11 +11,7 @@ const Exprience = () => {
       id="projects"
     >
       <h1 className="text-xl sm:text-2xl md:3xl lg:text-4xl font-serif">
-        {/* My <span className="text-purple">Progamming Exprience</span> */}
-        <TextGenerateEffect
-          words="My Programming Exprience"
-          className="text-center text-2xl md:text-3xl lg:text-4xl"
-        />
+        My <span className="text-purple">Progamming Exprience</span>
       </h1>
 
       <main className="w-full mt-12 grid md:grid-cols-4 grid-cols-1 gap-10">
