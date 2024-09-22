@@ -7,7 +7,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { MovingBorderButton } from "./ui/MovindBorder";
 const Hero = () => {
   return (
-    <section className="min-h-screen relative flex items-center py-10 ">
+    <section className="min-h-screen relative flex items-center py-20 ">
       <div>
         <Spotlight className="-top-40 -left-10 " fill="white" />
       </div>
@@ -18,8 +18,8 @@ const Hero = () => {
       </div>
 
       {/* Landing page  */}
-      <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center ">
-        <div className="flex flex-col gap-4 items-center w-full  md:w-[45vw] p-5 ">
+      <main className="flex flex-col md:flex-row justify-between gap-6 md:gap-10 items-center ">
+        <div className="flex flex-col gap-4 items-center w-full  md:w-[45vw] p-4 ">
           <TextGenerateEffect
             words="Hi! I'm Aung Myo Aye "
             className=" tracking-widest text-left text-md md:text-xl "
@@ -31,7 +31,7 @@ const Hero = () => {
           />
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
-            className="capatilize tracking-widest  text-base md:text-md "
+            className="capatilize tracking-widest text-center text-base md:text-md "
             duration={2}
           />
 
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
         <div className="relative  w-full md:w-[30vw] flex justify-center ">
           <MovingBorderButton
-            className="size-72 relative "
+            className=" size-60 md:size-72 relative "
             duration={Math.floor(Math.random() * 10000) + 10000}
             borderRadius="1.75rem"
             style={{
