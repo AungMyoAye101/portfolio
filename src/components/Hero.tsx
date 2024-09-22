@@ -42,11 +42,22 @@ const Hero = () => {
           />
         </div>
         <div className="relative  w-full md:w-[30vw] flex justify-center ">
-          <MovingBorderButton className="size-60 relative bg-black">
+          <MovingBorderButton
+            className="size-72 relative "
+            duration={Math.floor(Math.random() * 10000) + 10000}
+            borderRadius="1.75rem"
+            style={{
+              background: "rgb(4,7,29)",
+              backgroundColor:
+                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+
+              borderRadius: `calc(1.75rem* 0.96)`,
+            }}
+          >
             <Image
-              src={"/man.png"}
+              src={""}
               fill
-              className="object-cover bg-black"
+              className="object-cover"
               alt="Aung Myo Aye's profile picture"
             />
           </MovingBorderButton>
