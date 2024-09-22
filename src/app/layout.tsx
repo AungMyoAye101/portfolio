@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { ThemeProvider } from "@/app/Provider";
+import { ThemeProvider } from "./Provider";
+import NavBar from "@/components/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className=" max-w-8xl mx-auto">
         <ThemeProvider attribute="class" defaultTheme="dark">
+          <NavBar />
           {children}
         </ThemeProvider>
       </body>
