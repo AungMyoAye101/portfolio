@@ -6,7 +6,6 @@ import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa";
 import { MovingBorderButton } from "./ui/MovindBorder";
 const Hero = () => {
-  const words = "Transforming Concepts into Seamless User Experiences";
   return (
     <section className="min-h-screen relative flex items-center py-10 ">
       <div>
@@ -19,20 +18,21 @@ const Hero = () => {
       </div>
 
       {/* Landing page  */}
-      <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center p-4 md:p-8">
-        <div className="flex flex-col gap-3 items-center w-full  md:w-[45vw] ">
+      <main className="flex flex-col-reverse md:flex-row justify-between gap-10 items-center ">
+        <div className="flex flex-col gap-4 items-center w-full  md:w-[45vw] p-5 ">
           <TextGenerateEffect
             words="Hi! I'm Aung Myo Aye "
-            className=" tracking-widest text-center text-md md:text-xl "
+            className=" tracking-widest text-left text-md md:text-xl "
           />
 
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="A UI / UX Desinger and Full-Stack Developer from  Myanmar"
             className="text-center text-2xl md:text-3xl lg:text-4xl"
           />
           <TextGenerateEffect
-            words="A Full-stack developer based on Myanmar"
-            className="capatilize tracking-widest text-center text-xs md:text-base "
+            words="Transforming Concepts into Seamless User Experiences"
+            className="capatilize tracking-widest  text-base md:text-md "
+            duration={2}
           />
 
           <Button

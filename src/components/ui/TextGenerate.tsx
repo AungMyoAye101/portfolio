@@ -41,8 +41,10 @@ export const TextGenerateEffect = ({
                 word === "Aung" ||
                 word === "Myo" ||
                 word === "Aye" ||
-                word === "FullStack" ||
-                word === "Myanmar"
+                word === "Full-Stack" ||
+                word === "Aye" ||
+                word === "Myanmar" ||
+                word === "Experiences"
                   ? "text-purple"
                   : "dark:text-white text-black"
               } opacity-0`}
