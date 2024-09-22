@@ -36,7 +36,7 @@ const testimonials = [
 ];
 const Education = () => {
   return (
-    <section className="py-20  ">
+    <section className="py-20  " id="education">
       <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-serif mb-10">
         My <span className="text-purple">Education</span>
       </h1>

@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen relative flex items-center py-10 ">
       <div>
-        <Spotlight className="-top-40 -left-10" fill="white" />
+        <Spotlight className="-top-40 -left-10 " fill="white" />
       </div>
       {/* Grid background  */}
       <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0 ">

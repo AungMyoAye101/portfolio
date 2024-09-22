@@ -11,25 +11,25 @@ const NavBar = () => {
       </div>
       <div className="flex gap-4 md:gap-6 items-center text-xl ">
         <a
-          href="project"
+          href="#projects"
           className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
         >
           Projects
         </a>
         <a
-          href="project"
+          href="#education"
           className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
         >
           Education
         </a>
         <a
-          href="project"
+          href="#about"
           className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
         >
           About
         </a>
         <a
-          href="project"
+          href="#contact"
           className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
         >
           Contact
