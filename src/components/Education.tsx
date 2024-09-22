@@ -36,10 +36,12 @@ const testimonials = [
 ];
 const Education = () => {
   return (
-    <section>
-      <h1>My Education</h1>
+    <section className="py-20  ">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-serif mb-10">
+        My <span className="text-purple">Education</span>
+      </h1>
       <main>
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+        <div className="rounded-md flex flex-col antialiased   items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
