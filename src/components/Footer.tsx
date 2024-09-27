@@ -2,7 +2,6 @@ import React from "react";
 import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
-import { img } from "framer-motion/client";
 import Image from "next/image";
 
 const Footer = () => {

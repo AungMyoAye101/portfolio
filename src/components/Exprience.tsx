@@ -2,7 +2,6 @@ import React from "react";
 import { workExperience } from "@/data";
 import { MovingBorderButton } from "./ui/MovindBorder";
 import Image from "next/image";
-import { TextGenerateEffect } from "./ui/TextGenerate";
 
 const Exprience = () => {
   return (

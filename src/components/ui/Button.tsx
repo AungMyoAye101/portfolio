@@ -2,13 +2,11 @@ import React from "react";
 
 const Button = ({
   title,
-  className,
   postion,
   icon,
   handelClick,
 }: {
   title: string;
-  className?: string;
   postion?: string;
   icon?: React.ReactNode;
   handelClick?: () => void;

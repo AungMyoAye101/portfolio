@@ -1,9 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+
 import { BackgroundGradientAnimation } from "./BgGradient";
-import { Globe } from "./Globe";
+
 import GridGlobe from "./GridGlobe";
 import { useState } from "react";
 import animationData from "@/data/confettie.json";
@@ -54,14 +54,14 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
   const handelClick = () => {
     navigator.clipboard.writeText("aungmyoaye101@gmail.com");
     setCopied(true);

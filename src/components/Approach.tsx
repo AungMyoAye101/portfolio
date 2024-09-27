@@ -3,7 +3,6 @@ import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasReveal";
-import { div } from "framer-motion/client";
 
 function Approach() {
   return (
