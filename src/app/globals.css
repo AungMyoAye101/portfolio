@@ -83,3 +83,6 @@
     @apply font-bold text-3xl md:text-5xl text-center;
   }
 }
+.heading-link {
+  @apply hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out;
+}

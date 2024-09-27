@@ -4,35 +4,23 @@ import { BiMenuAltLeft } from "react-icons/bi";
 
 const NavBar = () => {
   return (
-    <nav className="absolute top-0 left-0 right-0 z-40 flex justify-between items-center px-10 md:px-14 py-2 w-full bg-black-200 border-b border-b-white-[0.1] ">
+    <nav className="absolute top-0 left-0 right-0 z-40 flex justify-between items-center px-10 md:px-14 py-3 w-full bg-black-200 border-b border-b-white-[0.1] ">
       <div>
         <h1 className="text-xl md:text-2xl font-serif font-bold text-purple">
-          Aung Myo Aye
+          AMA-Portfolio
         </h1>
       </div>
       <div className="hidden md:flex gap-4 md:gap-6 items-center text-xl ">
-        <a
-          href="#projects"
-          className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
-        >
+        <a href="#projects" className="heading-link">
           Projects
         </a>
-        <a
-          href="#education"
-          className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
-        >
+        <a href="#education" className="heading-link">
           Education
         </a>
-        <a
-          href="#about"
-          className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
-        >
+        <a href="#about" className="heading-link">
           About
         </a>
-        <a
-          href="#contact"
-          className="hover:text-purple hover:underline hover:underline-offset-8 transition-all duration-150 ease-in-out"
-        >
+        <a href="#contact" className="heading-link">
           Contact
         </a>
       </div>
