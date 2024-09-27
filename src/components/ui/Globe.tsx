@@ -116,7 +116,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
   const _buildData = () => {
     const arcs = data;
-    const points = [];
+    const points: any = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
       const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
@@ -138,8 +138,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     // remove duplicates for same lat and lng
     const filteredPoints = points.filter(
-      (v, i, a) =>
-        a.findIndex((v2) =>
+      (v: { [x: string]: any }, i: any, a: any[]) =>
+        a.findIndex((v2: { [x: string]: any }) =>
           ["lat", "lng"].every(
             (k) => v2[k as "lat" | "lng"] === v[k as "lat" | "lng"]
           )
@@ -296,7 +296,7 @@ export function hexToRgb(hex: string) {
 }
 
 export function genRandomNumbers(min: number, max: number, count: number) {
-  const arr = [];
+  const arr: number[] = [];
   while (arr.length < count) {
     const r = Math.floor(Math.random() * (max - min)) + min;
     if (arr.indexOf(r) === -1) arr.push(r);

@@ -22,7 +22,7 @@ export function MovingBorderButton({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: "button";
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
