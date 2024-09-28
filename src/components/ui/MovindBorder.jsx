@@ -19,15 +19,6 @@ export function MovingBorderButton({
   duration,
   className,
   ...otherProps
-}: {
-  borderRadius?: string;
-  children: React.ReactNode;
-  as?: "button";
-  containerClassName?: string;
-  borderClassName?: string;
-  duration?: number;
-  className?: string;
-  [key: string]: any;
 }) {
   return (
     <Component
@@ -75,15 +66,9 @@ export const MovingBorder = ({
   rx,
   ry,
   ...otherProps
-}: {
-  children: React.ReactNode;
-  duration?: number;
-  rx?: string;
-  ry?: string;
-  [key: string]: any;
 }) => {
-  const pathRef = useRef<any>();
-  const progress = useMotionValue<number>(0);
+  const pathRef = useRef();
+  const progress = useMotionValue < number > 0;
 
   useAnimationFrame((time) => {
     const length = pathRef.current?.getTotalLength();

@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/components/ui/CanvasReveal.jsx",
-    "src/components/ui/Globe.jsx"
+    "src/components/ui/Globe.jsx",
+    "src/components/ui/MovindBorder.jsx"
   ],
   "exclude": ["node_modules"]
 }
