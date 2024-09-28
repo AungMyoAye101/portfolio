@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/ui/CanvasReveal.jsx"
+    "src/components/ui/CanvasReveal.jsx",
+    "src/components/ui/Globe.jsx"
   ],
   "exclude": ["node_modules"]
 }
